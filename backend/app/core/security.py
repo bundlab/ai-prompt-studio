@@ -1,4 +1,4 @@
-from jose import JWTError, jwt
+from jose import JWTError, jwt  # noqa: F401   ← suppresses only for JWTError
 from datetime import datetime, timedelta, timezone
 from app.core.config import settings
 
