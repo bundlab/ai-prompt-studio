@@ -8,3 +8,13 @@ unfixable = ["F401"]
 
 # Optional: ignore F401 completely project-wide (not recommended yet)
 # ignore = ["F401"]
+[project]
+name = "ai-prompt-studio-backend"
+requires-python = ">=3.12"          # ← or ">=3.13", ">=3.11"
+dependencies = [
+    "fastapi >=0.115",
+    "uvicorn",
+    "sqlmodel",
+    "pydantic >=2.9",
+    # ...
+]

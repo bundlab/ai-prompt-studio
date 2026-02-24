@@ -34,7 +34,10 @@ jobs:
       - name: Test frontend
         working-directory: frontend
         run: npm test  # Assume vitest or jest
-
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+            python-version: '3.12'          # ← change here if needed
   deploy-preview:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
