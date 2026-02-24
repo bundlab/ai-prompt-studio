@@ -1,0 +1,10 @@
+[tool.ruff]
+# Enable auto-fixing for most things
+fix = true
+
+[tool.ruff.lint]
+# But never auto-remove unused imports (F401) – prevents accidental deletions
+unfixable = ["F401"]
+
+# Optional: ignore F401 completely project-wide (not recommended yet)
+# ignore = ["F401"]
