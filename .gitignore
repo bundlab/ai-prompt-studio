@@ -5,6 +5,7 @@ __pycache__/
 node_modules/
 dist/
 build/
+.venv
 .env
 *.log
 .DS_Store
