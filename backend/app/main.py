@@ -1,9 +1,9 @@
 from contextlib import asynccontextmanager
+
+from app.api import auth, users  # ← add auth
+from app.core.dependencies import engine
 from fastapi import FastAPI
 from sqlmodel import SQLModel
-
-from app.core.dependencies import engine
-from app.api import users, auth   # ← add auth
 
 
 @asynccontextmanager
