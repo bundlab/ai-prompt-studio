@@ -6,7 +6,7 @@ services:
       POSTGRES_PASSWORD: pass
       POSTGRES_DB: db
     ports:
-      - "5432:5432"
+      - "5434:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
@@ -20,7 +20,7 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgresql+asyncpg://user:pass@db/db
+      DATABASE_URL: postgresql+asyncpg://user:pass@db:5434/db
 
   frontend:
     build: ./frontend
