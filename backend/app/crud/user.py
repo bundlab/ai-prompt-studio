@@ -24,7 +24,11 @@ async def create_user(db: AsyncSession, user: UserCreate) -> User:
     return db_user
 
 
-async def authenticate_user(db: AsyncSession, username: str, password: str) -> User | None:
+async def authenticate_user(
+    db: AsyncSession, 
+    username: str, 
+    password: str,
+) -> User | None:
     user = await get_user_by_username(db, username)
     if not user:
         return None
