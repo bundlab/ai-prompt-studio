@@ -10,4 +10,8 @@ def client():
 def test_root(client):
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"message": "Welcome to AI Prompt Studio API"}
+    assert response.json() == {
+        "message": "Welcome to AI Prompt Studio API",
+        "docs": "/docs",
+        "version": "0.1.0",
+    }

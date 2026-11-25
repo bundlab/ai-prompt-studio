@@ -1,0 +1,9 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontend application",
+  "scripts": {
+    "test": "echo \"No tests configured\" && exit 0"
+  }
+}
