@@ -11,3 +11,4 @@ passlib[bcrypt]
 pydantic-settings==2.12.0
 pydantic-core==2.41.5
 pydantic-extra-types==2.11.1
+email-validator==2.3.0
