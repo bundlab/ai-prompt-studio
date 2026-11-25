@@ -18,8 +18,7 @@ class UserLogin(BaseModel):
 class User(UserBase):
     id: int
 
-    class ConfigDict:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 class Token(BaseModel):
